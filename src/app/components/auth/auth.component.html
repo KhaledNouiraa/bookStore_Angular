@@ -1,0 +1,58 @@
+<div class="container">
+    <div fxLayout="row" fxLayoutAlign="center center" class="content">
+      <mat-card class="card" >
+        <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+          <h3>Welcome to BookStore !</h3>
+        </mat-card-title>
+        <mat-card-content>
+   
+             
+  <div class=" mat-elevation-z8" >
+    <mat-grid-list cols="2" rowHeight="2:2" >
+        <mat-grid-tile  >
+    <mat-card class="cool-card"  >
+        <mat-card-header >
+          <div mat-card-avatar ><img src="../../../assets/003-04-512.png" width="50" height="50" alt=""> </div>
+          <mat-card-title> Administrateur</mat-card-title>
+          <mat-card-subtitle>Login</mat-card-subtitle>
+  
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/38b14b120abf9af713627840f855a6cf.png"   width="20" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+           You can Create/Add/Delete A Book
+          </p>
+        </mat-card-content>    
+        
+        <mat-card-actions>
+            <a mat-raised-button [routerLink]="['/book/get']" color="primary" type="submit" >Login</a>
+       
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+    <mat-card class="cool-card"  >
+        <mat-card-header >
+          <div mat-card-avatar ><img src="../../../assets/avatar_male.png" width="50" height="50"  alt=""> </div>
+          <mat-card-title> Simple User</mat-card-title>
+          <mat-card-subtitle>Login</mat-card-subtitle>
+  
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/fc81d759cb41197e99b73986db737f0d.jpg"   width="20" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+           You can pass command line !
+          </p>
+        </mat-card-content> 
+        
+        <mat-card-actions>
+            <a mat-raised-button  (click)="createOrder()" [routerLink]="['/list/shop']" color="warn" type="submit" >Login</a>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>

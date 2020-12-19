@@ -1,0 +1,88 @@
+<div class="container">
+  <div fxLayout="row" fxLayoutAlign="center center" class="content">
+    <mat-card class="card" >
+      <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+        <h3>Add Book</h3>
+      </mat-card-title>
+      <mat-card-content>
+<div class=" mat-elevation-z8">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+            
+              <div class="form-group">
+               
+                <div class="form-group">
+                     
+                  <mat-form-field>
+                    <input [(ngModel)]="book.title" matInput placeholder="Title">
+                    <mat-error>Invalid email address.</mat-error>   
+                </mat-form-field>
+                      </div>
+                      <div class="form-group">
+                        <mat-form-field>
+                          <input  [(ngModel)]="book.author" matInput placeholder="Author">   
+                          <mat-error>This field is empty.</mat-error>
+                      </mat-form-field>
+                      </div>
+                      <div class="form-group">
+                        <mat-form-field>
+                          <input  [(ngModel)]="book.price_unit" matInput placeholder="Price">   
+                          <mat-error>This field is empty.</mat-error>
+                      </mat-form-field>
+                      </div>
+            </div>
+              <!-- /.form-group -->
+              <br>
+            
+              <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+               
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input  type="date" matInput [(ngModel)]="book.date">
+            
+              </mat-form-field>
+                  <div class="form-group">
+                    <mat-form-field>
+                      <input [(ngModel)]="book.quantity" matInput placeholder="Quantity">
+                      <mat-error>Invalid email address.</mat-error>   
+                  </mat-form-field>
+                  </div>
+              <!-- /.form-group -->
+        
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+        
+          <div class="row">
+          
+            <!-- /.col -->
+            <div class="col-12 col-sm-6">
+           
+            
+                  <div class="form-group">
+                    <a mat-raised-button (click)="addBook()" color="primary" type="submit" >Submit</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp; <button mat-raised-button color="warn" (click)="onNoClick()">Clear</button>
+                  </div>
+                  
+              <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.card-body -->
+        
+          <!-- /.card -->
+        </div>
+        <!-- /.col (right) -->
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
